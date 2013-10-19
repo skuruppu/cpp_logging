@@ -12,9 +12,9 @@ Usage
 `level` is the log level.
 `expr` can be any expression.
 
-Only log messages with a level greater than or equal to the LOGLEVEL value are
-output. Compile your program with -DLOGLEVEL=log_level to specify the minimum
-log level. All log messages are output to `std::cerr`.
+Only log messages with a level greater than or equal to the `LOGLEVEL`
+macro are output. Compile your program with `-DLOGLEVEL=level` to
+specify the minimum log level. All log messages are output to stderr.
 
 Available log levels:
 
