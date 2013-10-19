@@ -3,6 +3,7 @@ Logging
 
 A macro that allows logging using the insertion (`<<`) operator for C++.
 
+
 Usage
 -----
 
@@ -22,6 +23,7 @@ Available log levels:
     WARNING     2
     ERROR       3
     CRITICAL    4
+
 
 Example
 -------
@@ -43,13 +45,13 @@ Example
         // LOGLEVEL=2
         z = x;
         if (z < y) {
-            LOG(WARNING) << "z=" << z << " < y=" << y;
+            LOG(WARNING) << "z=" << z << " is less than y=" << y;
         }
 
         // LOGLEVEL=3
         z = x + y + 1;
         if (z != x + y) {
-            LOG(ERROR) << "z=" << z << " != " << x + y;
+            LOG(ERROR) << "z=" << z << " is not equal to x+y=" << x + y;
         }
 
         // LOGLEVEL=4
@@ -61,6 +63,15 @@ Example
 
         return 0;
     }
+
+Output:
+
+    [INFO]      logging.cpp:9: Running program...
+    [DEBUG]     logging.cpp:13: x+y = 15
+    [WARNING]   logging.cpp:18: z=5 is less than y=10
+    [ERROR]     logging.cpp:24: z=16 is not equal to x+y=15
+    [CRITICAL]  logging.cpp:31: std::bad_alloc
+
 
 Distribution
 ------------
