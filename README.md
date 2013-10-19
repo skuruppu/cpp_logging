@@ -76,4 +76,4 @@ Output:
 Distribution
 ------------
 
-Refer to the `COPYING` file for licensing information of this program.
+Refer to the logging.h file for licensing information.
