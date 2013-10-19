@@ -16,11 +16,9 @@
  */
 
 /*
- * Logging -- A simple logger that permits use of the stream syntax.
+ * Logging -- Allows logging using the insertion (`<<`) operator.
  * Author: Shanika Kuruppu
  * Usage: LOG(level) << expr1 << expr2 << ...;
- * The logging level is the minimum level a log message must satisfy before it
- * is output.
  */
 
 #ifndef INCLUDE_LOG_H
