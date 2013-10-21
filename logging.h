@@ -58,7 +58,7 @@ public:
     }
 };
 
-std::string log_level_to_str(const int log_level) {
+inline std::string log_level_to_str(const int log_level) {
     char buf[12];
     std::string str = "";
 
